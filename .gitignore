@@ -1,0 +1,21 @@
+# Personal knowledge base content — never pushed
+/wiki/
+/raw/
+
+# Secrets
+.env
+
+# Claude Code local settings (machine-specific paths, not project config)
+/.claude/
+
+# Obsidian vault-local state and scaffolding
+/.obsidian/
+/Clippings/
+/templates/
+Untitled.canvas
+Welcome.md
+Unclear.md
+
+# Python
+__pycache__/
+*.pyc
