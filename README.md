@@ -89,3 +89,11 @@ python scripts/ask_vector.py "What connects operator learning to Bayesian deep l
 ```
 
 Re-run `neo4j_import.py` any time `wiki/` changes to keep the graph in sync.
+
+## Tests
+
+```
+python -m unittest discover tests
+```
+
+Covers `fetch_source.py` and runs fully offline — no network, no API keys. The YouTube path is exercised against stub modules standing in for both `youtube-transcript-api` generations (the 1.x instance API and the 0.6.x classmethod API), and the PDF path against PDFs built byte-by-byte in the fixture, so input routing, slug generation, transcript formatting, `raw/` immutability and every failure path are checked without leaving the machine.
