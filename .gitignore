@@ -2,11 +2,20 @@
 /wiki/
 /raw/
 
+# Pipeline run artifacts (manifests, per-source summaries, editorial briefs)
+/.pipeline/
+
+# LinkedIn drafts (local fallback when Notion is unavailable)
+/drafts/
+
 # Secrets
 .env
 
-# Claude Code local settings (machine-specific paths, not project config)
-/.claude/
+# Claude Code local settings (machine-specific paths, not project config).
+# The pipeline's agent and skill definitions ARE project config, so they stay.
+/.claude/*
+!/.claude/agents/
+!/.claude/skills/
 
 # Obsidian vault-local state and scaffolding
 /.obsidian/
