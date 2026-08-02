@@ -9,6 +9,8 @@ Usage:
     python tests/test_fetch_source.py
 """
 
+from __future__ import annotations
+
 import sys
 import tempfile
 import unittest

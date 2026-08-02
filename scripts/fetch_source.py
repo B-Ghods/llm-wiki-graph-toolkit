@@ -23,6 +23,8 @@ Usage:
     python scripts/fetch_source.py <input> --lang de --lang en
 """
 
+from __future__ import annotations  # keep the `X | None` hints working on Python 3.9
+
 import argparse
 import json
 import re
